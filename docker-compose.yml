@@ -1,0 +1,21 @@
+version: '3'
+services:
+  app:
+    image: 'app:latest'
+    build:
+      context: ./
+      args:
+        PORT: '3000'
+    environment:
+      TZ: 'America/Argentina/Buenos_Aires'
+      NODE_ENV: 'development'
+      PORT: '3000'
+      HOST_API: 'http://cover_backoffice_api:8299'
+      GRAPHQL_URI: '/graphql'
+    volumes:
+      - ./:/app:rw
+      - /app/node_modules
+    ports:
+      - '3000:3000'
+      - '9229:9229'
+    restart: always

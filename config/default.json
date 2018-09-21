@@ -1,0 +1,29 @@
+{
+  "server": {
+    "port": "3000",
+    "cache": {
+      "ttl": "30",
+      "static_ttl": "1800"
+    },
+    "server_render": true
+  },
+  "client": {
+    "site_name": "TN Cover",
+    "title_site_name": "TN Cover Frontend",
+    "cdn_static_url": "",
+    "newrelic": {
+      "enable": false,
+      "license_key": "",
+      "app_name": "react-apollo-boilerplate"
+    },
+    "heapdump": {
+      "enable": false
+    },
+    "services": {
+      "graphql": {
+        "host": "http://localhost:8299",
+        "uri": "/graphql"
+      }
+    }
+  }
+}

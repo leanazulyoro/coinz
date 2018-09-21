@@ -1,0 +1,23 @@
+{
+  "server": {
+    "port": "PORT",
+    "cache": {
+      "ttl": "SERVER_TTL",
+      "static_ttl": "SERVER_STATIC_TTL"
+    }
+  },
+  "client": {
+    "cdn_static_url": "CDN_URL",
+    "newrelic": {
+      "enable": "NEWRELIC_ENABLE",
+      "license_key": "NEWRELIC_LICENSE_KEY",
+      "app_name": "NEWRELIC_APP_NAME"
+    },
+    "services": {
+      "graphql": {
+        "host": "HOST_API",
+        "uri": "GRAPHQL_URI"
+      }
+    }
+  }
+}
